@@ -1,0 +1,17 @@
+<% include partials/header%>
+
+<h1><%= task.name %></h1>
+
+<img src="<%= task.image %>">
+
+<p><%=task.description%></p>
+
+<p>Progress: <%=task.progress%>%</p>
+
+<% task.comments.forEach(function(comment){%>
+    <p>
+        <strong><%= comment.author %></strong> - <%= comment.text %>
+    </p>
+<% }) %>
+
+<% include partials/footer%>

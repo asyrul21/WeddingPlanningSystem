@@ -1,0 +1,51 @@
+<% include ../partials/header %>
+
+
+   <div class="container">
+        <header class="jumbotron">
+        <div class="container">
+             <h1>Welcome to WeddSystem!</h1>
+            <p>Organize, monitor, and view your tasks</p>
+            
+            <p>
+                <a class = "btn btn-primary btn-lg" href="/tasks/new">Add a New Task</a>
+            </p>
+            
+        </div>
+    </header>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Below are all the tasks covered for this event:</h3>
+            
+        </div>
+    </div>
+
+        
+     <div class="row text-centerp" style="display:flex; flex-wrap: wrap;">
+        <% tasks.forEach((task) => { %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="<%=task.image%>">
+                    <div class="caption">
+                        <h4><%=task.name%></h4>
+                    </div>
+                    <div class="caption">
+                        <h4>Progress: <%=task.progress%>%</h4>
+                    </div>
+                     <p>
+                        <a href="/tasks/<%= task._id%>" class="btn btn-primary">More Info</a>
+                     </p>
+                </div>
+            </div>
+        <% });%>
+     </div>
+        
+   </div>
+    
+    
+    
+ </div>
+
+
+<% include ../partials/footer %>

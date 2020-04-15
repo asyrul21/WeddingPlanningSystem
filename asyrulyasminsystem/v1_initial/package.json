@@ -1,0 +1,19 @@
+{
+  "name": "asyrulyasminsystem",
+  "version": "1.0.0",
+  "description": "wedding task monitoring system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Asyrul Hafetzy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0"
+  }
+}

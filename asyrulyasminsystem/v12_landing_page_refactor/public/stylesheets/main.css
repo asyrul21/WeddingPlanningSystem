@@ -1,0 +1,46 @@
+body {
+    background: white;
+    background-image: url(https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: auto;
+     
+    
+}
+
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+} 
+
+.deleteform {
+    display: inline;
+}
+
+#jumbo {
+    opacity: 0.8;
+}
+
+#header {
+    
+   font-family: 'Great Vibes', cursive; 
+   color: rgba(0, 0, 0, 0.9);
+}
+
+/*#opaque {*/
+    /*opacity: 1;*/
+/*    color: rgba(0, 0, 0, 0.9);*/
+    
+/*}*/
